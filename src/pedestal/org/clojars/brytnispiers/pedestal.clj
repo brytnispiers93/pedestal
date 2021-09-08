@@ -6,10 +6,12 @@
   component/Lifecycle
   
   (start [this]
-         (println "Started pedestal component!"))
+         (println "Started pedestal component!")
+         this)
   
   (stop [this]
-        (println "Stopped pedestal component!")))
+        (println "Stopped pedestal component!")
+        this))
 
 (defn new-pedestal []
-  (map->PedestalComponent {}))
+  (map->Pedestal {}))
