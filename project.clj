@@ -1,4 +1,4 @@
-(defproject org.clojars.brytnispiers/pedestal-component "0.1.0"
+(defproject org.clojars.brytnispiers/pedestal "0.1.0"
   :description "Wraps a Pedestal server as a component"
   :url "https://github.com/brytnispiers93/pedestal-component.git"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
