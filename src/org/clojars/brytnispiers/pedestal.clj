@@ -7,7 +7,6 @@
   component/Lifecycle
   
   (start [this]
-         (println "Start!" this)
          (if server
            this
            (-> service-map
@@ -16,8 +15,7 @@
                (partial assoc this :server))))
   
   (stop [this]
-        (println "Stop:" this)
-        (when server (println "stop server: " server) (http/stop server))
+        (when server (http/stop server))
         (assoc this :server nil)))
 
 (def required-keys [::http/routes ::http/type ::http/port])
